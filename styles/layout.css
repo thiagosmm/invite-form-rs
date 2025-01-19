@@ -134,6 +134,21 @@ main {
         }
       }
     }
+
+    .container-cores {
+      display: flex;
+      justify-content: space-between;
+      height: 2.5rem;
+      margin-top: 0.5rem;
+
+      .cor {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 0.5rem solid var(--shape-button);
+        border-radius: 50%
+      }
+    }
+
     .divider {
       height: 0.0625rem;
       background: var(--input-stroke);
