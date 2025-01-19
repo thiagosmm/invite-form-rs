@@ -3,9 +3,11 @@
   justify-content: center;
   gap: 1.25rem;   
   width: 100%;
+  max-width: 71.25rem;
   height: 100vh;  
   overflow: hidden;
   padding: 2rem 2rem 0;
+  background: var(--shape-background);
 
   justify-content: space-around;
 }
@@ -46,20 +48,28 @@ aside {
     img {
       width: 100%;
       text-align: right;
+
+      border-radius: 0.5rem;
     }
   }
 }
 
 main {
+  background: var(--shape-body);
   flex: 1;
   overflow: auto;
   width: 27.5rem;
+  max-width: 51.25rem;
+  border-radius: 0.5rem;
   border: 1px solid red;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   /* padding: 5rem 8.125rem; */
 
   #main-container {
     /* border: 1px solid blue; */
-    margin: 5rem 8.125rem;
+    margin: 5rem 6rem;
 
     h2 {
       font: var(--heading-md);
@@ -96,13 +106,16 @@ main {
           color: var(--text-body);
         }
         input {
-          border: none;
+          margin-top: 0.5rem;
+          height: 3rem;
+          border: 1px solid var(--input-stroke);
+          border-radius: 0.5rem;
           background: var(--input-base);
           color: var(--input-placeholder);
-          ::placeholder {
+          padding-left: 1rem;
+          &::placeholder {
             color: var(--input-placeholder);
           }
-          
         }
       }
 
@@ -113,7 +126,27 @@ main {
       }
 
       #description input {
-        height: 136px;
+        height: 8.5rem;
+        &::placeholder {
+          position: absolute;
+          top: 1rem;
+          left: 0.75rem;
+        }
+      }
+    }
+    .divider {
+      height: 0.0625rem;
+      background: var(--input-stroke);
+      margin-bottom: 2.5rem;
+    }
+
+    .checkbox-final {
+      display: flex;
+
+      p {
+        font: var(--body-xs);
+        color: var(--text-body);
+        margin-left: 0.5rem;
       }
     }
   } 

@@ -7,7 +7,6 @@
 }
 
 :root {
-  background: #29292E;
 
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
@@ -47,4 +46,7 @@
 
 body {
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  background: var(--shape-background);
 }
