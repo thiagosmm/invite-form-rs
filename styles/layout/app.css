@@ -1,0 +1,13 @@
+#app {
+  display: flex;           
+  justify-content: center;
+  gap: 1.25rem;   
+  width: 100%;
+  max-width: 71.25rem;
+  height: 100vh;  
+  overflow: hidden;
+  padding: 2rem 2rem 0;
+  background: var(--shape-background);
+
+  justify-content: space-around;
+}

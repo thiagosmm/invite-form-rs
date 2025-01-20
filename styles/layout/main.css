@@ -1,59 +1,3 @@
-#app {
-  display: flex;           
-  justify-content: center;
-  gap: 1.25rem;   
-  width: 100%;
-  max-width: 71.25rem;
-  height: 100vh;  
-  overflow: hidden;
-  padding: 2rem 2rem 0;
-  background: var(--shape-background);
-
-  justify-content: space-around;
-}
-
-aside {
-  #aside-container {
-    max-width: 25rem;
-    display: flex;
-    justify-content: flex-end;
-    /* padding-left: 1.25rem; */
-    position: relative;
-
-    #aside-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-      left: 2rem;
-
-      img {
-        height: 3rem;
-        width: 3rem;
-      }
-
-      h2 {
-        font: var(--logo); 
-        color: var(--pink);
-      }
-
-      p {
-          font: var(--body-md);
-          color: var(--text-heading);
-      }
-    }
-
-    img {
-      width: 100%;
-      text-align: right;
-
-      border-radius: 0.5rem;
-    }
-  }
-}
-
 main {
   display: flex;
   align-items: center;
@@ -61,7 +5,7 @@ main {
   background: var(--shape-body);
   flex: 1;
   overflow: auto;
-  width: 27.5rem;
+  /* width: 27.5rem; */
   max-width: 51.25rem;
   border-radius: 0.5rem;
   &::-webkit-scrollbar {
@@ -71,7 +15,7 @@ main {
 
   #main-container {
     /* border: 1px solid blue; */
-    margin: 5rem 6rem 5rem;
+    margin: 2rem 6rem 3rem;
 
     h2 {
       font: var(--heading-md);
@@ -134,12 +78,17 @@ main {
 
       #description input {
         height: 8.5rem;
+        padding-bottom: 5.5rem;
         &::placeholder {
           position: absolute;
+          padding-left: 0.25rem;
           top: 1rem;
           left: 0.75rem;
         }
       }
+
+      /* #checkbox-type { A FAZER !!!!!!!!!!
+      } */
     }
 
     .container-cores {
@@ -182,6 +131,12 @@ main {
         }
       }
     }
+
+    /* #checkbox-style { A FAZER !!!!!!!!!!
+    } */
+
+    /* #file-selector { A FAZER !!!!!!!!!!
+    } */
 
     .divider {
       height: 0.0625rem;
@@ -229,7 +184,6 @@ main {
         align-items: center;
         justify-content: center;
       }
-      
     }
   } 
 }

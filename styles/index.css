@@ -1,2 +1,4 @@
 @import url(global.css);
-@import url(layout.css);
+@import url(/styles/layout/app.css);
+@import url(/styles/layout/aside.css);  
+@import url(/styles/layout/main.css);   

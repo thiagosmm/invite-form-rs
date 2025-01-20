@@ -1,0 +1,41 @@
+aside {
+  #aside-container {
+    max-width: 25rem;
+    display: flex;
+    justify-content: flex-end;
+    /* padding-left: 1.25rem; */
+    position: relative;
+
+    #aside-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      left: 2rem;
+
+      img {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      h2 {
+        font: var(--logo); 
+        color: var(--pink);
+      }
+
+      p {
+          font: var(--body-md);
+          color: var(--text-heading);
+      }
+    }
+
+    img {
+      width: 100%;
+      text-align: right;
+
+      border-radius: 0.5rem;
+    }
+  }
+}
