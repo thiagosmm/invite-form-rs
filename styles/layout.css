@@ -55,13 +55,15 @@ aside {
 }
 
 main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background: var(--shape-body);
   flex: 1;
   overflow: auto;
   width: 27.5rem;
   max-width: 51.25rem;
   border-radius: 0.5rem;
-  border: 1px solid red;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -69,7 +71,7 @@ main {
 
   #main-container {
     /* border: 1px solid blue; */
-    margin: 5rem 6rem;
+    margin: 5rem 6rem 5rem;
 
     h2 {
       font: var(--heading-md);
@@ -104,9 +106,9 @@ main {
         label {
           font: var(--body-sm);
           color: var(--text-body);
+          margin-bottom: 0.5rem;
         }
         input {
-          margin-top: 0.5rem;
           height: 3rem;
           border: 1px solid var(--input-stroke);
           border-radius: 0.5rem;
@@ -116,6 +118,11 @@ main {
           &::placeholder {
             color: var(--input-placeholder);
           }
+          
+        }
+        input:focus {
+          border: 1px solid var(--brand-light);
+          outline: none;
         }
       }
 
@@ -149,6 +156,33 @@ main {
       }
     }
 
+    .container-themes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0.5rem;
+      
+      figure {
+        background: var(--shape-button);
+        border-radius: 0.5rem;
+        border: 1px solid transparent;
+
+        img {
+          margin: 0.25rem;
+        }
+
+        figcaption {
+          font: var(--body-sm);
+          color: var(--text-heading);
+          text-align: center;
+          margin-bottom: 0.5rem;
+        }
+        
+        &:hover {
+          border: 1px solid var(--brand-light);
+        }
+      }
+    }
+
     .divider {
       height: 0.0625rem;
       background: var(--input-stroke);
@@ -157,12 +191,45 @@ main {
 
     .checkbox-final {
       display: flex;
+      margin-bottom: 0.5rem;
+      align-items: center;
 
       p {
         font: var(--body-xs);
         color: var(--text-body);
         margin-left: 0.5rem;
+
+        span {
+          color: var(--brand-light);
+          text-decoration: underline;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 1px solid var(--input-stroke);
+        border-radius: 4px; /* Optional, for rounded corners */
+        background-color: var(--input-base);
+      }
+      
+      input[type="checkbox"]:checked {
+        /* transition: border-color 0.1s; */
+        border-color: var(--brand-light);
+      }
+      
+      input[type="checkbox"]:checked::after {
+        content: url(/assets/icons/check.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
     }
   } 
 }
