@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+  <script src="script.js"></script>
   
   
 </head>
@@ -137,7 +138,12 @@
           <div class="input-grid">
             <div class="container-input">
               <label for="">Estilo</label>
-              <input type="checkbox" id="checkbox-style">
+              <div class="container-style">
+                <div class="button-style" id="toggleStyle" onclick="toggleStyle()">
+                  <button></button>
+                </div>
+                <span>Escuro</span>
+              </div>
             </div>
             <div id="file-selector" class="container-input">
               <label for="">Foto de capa</label>
