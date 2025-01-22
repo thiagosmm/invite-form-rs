@@ -41,6 +41,7 @@
   --font-body: "Open Sans", serif;
   --body-md: 400 1rem var(--font-body);
   --body-sm: 400 0.875rem var(--font-body);
+  --body-sm-bold: 600 0.875rem var(--font-body);
   --body-xs: 400 0.75rem var(--font-body);
 }
 

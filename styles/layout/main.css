@@ -87,8 +87,54 @@ main {
         }
       }
 
-      /* #checkbox-type { A FAZER !!!!!!!!!!
-      } */
+      .container-switch-style {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 272px;
+        height: 3rem;
+        border: 1px solid var(--input-stroke);
+        border-radius: 0.5rem;
+        background: var(--input-base);
+        color: var(--input-placeholder);
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        input {
+          display: none;
+        }
+
+        .container-type-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          width: 8.125rem;
+          height: 2.5rem;
+          /* position: relative; */
+
+          img {
+            width: 1rem;
+            height: 1rem;
+          }
+
+          p {
+            font: var(--body-sm);
+          }
+        }
+
+        .selected {
+          border-radius: 0.25rem;
+          background: var(--input-stroke);
+          color: var(--text-heading);
+
+          p {
+            font: var(--body-sm-bold);
+          }
+        }
+      }
     }
 
     .container-cores {
@@ -177,7 +223,6 @@ main {
             cursor: pointer;
           }
         }
-
       }
 
       span {
@@ -185,10 +230,59 @@ main {
         color: var(--text-body);
         margin-left: 0.75rem;
       }
-    } 
+    }
 
-    /* #file-selector { A FAZER !!!!!!!!!!
-    } */
+    .file-selector {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        
+        font: var(--body-sm);
+        color: var(--text-body);
+      }
+    }
+
+    .container-file-selector {
+      border: 1px solid transparent;
+      border-radius: 0.5rem;
+      background: var(--shape-button);
+      width: 6rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      position: relative;
+
+      &:hover {
+        border: 1px solid var(--brand-light);
+      }
+
+      img {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      p {
+        font: var(--body-sm-bold);
+        color: var(--text-body);
+      }
+
+      input {
+        position: absolute;
+
+        width: 100%;
+        height: 200%;
+        inset: 0;
+        opacity: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
 
     .divider {
       height: 0.0625rem;

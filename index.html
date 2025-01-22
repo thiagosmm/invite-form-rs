@@ -50,7 +50,18 @@
             </div>
             <div class="container-input">
               <label for="">Tipo</label>
-              <input type="checkbox" name="" id="checkbox-type">
+              <div class="container-switch-style" onclick="toggleType()">
+                <input type="checkbox" name="" id="checkbox-type">
+                <div class="container-type-content selected" id="presencial"> 
+                  <img src="/assets/icons/building-selected.png" alt="">
+                  <p>Presencial</p>
+                </div>
+                <div class="container-type-content" id="online">
+                  <img src="/assets/icons/video.png" alt="">
+                  <p>Online</p>
+                </div>
+              </div>
+              
             </div>
             <div class="container-input">
               <label for="">Local</label>
@@ -147,7 +158,15 @@
             </div>
             <div id="file-selector" class="container-input">
               <label for="">Foto de capa</label>
-              <input type="file">
+              <div class="file-selector">
+                <div class="container-file-selector">
+                  <input type="file">
+                  <img src="/assets/icons/upload.png" alt="">
+                  <p>Selecionar</p>
+                </div>
+                <p>Nenhum arquivo</p>
+              </div>
+              
             </div>
           </div>
         </fieldset>
